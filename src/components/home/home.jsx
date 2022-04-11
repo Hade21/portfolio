@@ -1,4 +1,5 @@
 import React from "react";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
           </div>
           <Link to="/about">
             <div className="button text-base font-extrabold px-4 py-2 border-2 border-white w-fit self-center md:text-3xl md:px-6 md:py-3 font-inter cursor-pointer">
-              <button>See more</button>
+              <button>
+                See more <ArrowForwardIcon fontSize="large" />
+              </button>
             </div>
           </Link>
         </div>

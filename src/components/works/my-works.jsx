@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./card/card";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
 import { items } from "./card/works.js";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -40,7 +41,7 @@ export default function MyWorks() {
           <div className="button">
             <Link to="/contact">
               <button className="text-base font-inter font-extrabold px-4 py-2 border-2 border-white w-fit self-center md:text-4xl md:px-6 md:py-3 lg:text-lg cursor-pointer text-white">
-                Contact Me
+                Contact Me <ArrowForwardIcon fontSize="large" />
               </button>
             </Link>
           </div>

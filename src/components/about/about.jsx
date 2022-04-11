@@ -1,5 +1,6 @@
 import React from "react";
 import Photo from "../../assets/20190611_100255.jpg";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
 
 export default function About() {
@@ -43,7 +44,7 @@ export default function About() {
           <div className="button">
             <Link to="/works">
               <button className="text-base font-inter font-extrabold px-4 py-2 border-2 border-white w-fit self-center md:text-4xl md:px-6 md:py-3 lg:text-xl cursor-pointer">
-                My Works
+                My Works <ArrowForwardIcon fontSize="large" />
               </button>
             </Link>
           </div>
