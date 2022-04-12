@@ -18,6 +18,8 @@ const Card = (props) => {
         <div className="button flex flex-col gap-2 justify-between font-nunito text-sm">
           <a
             href={props.url}
+            target="_blank"
+            rel="noreferrer"
             className="px-3 py-1 border-2 border-pink w-full
           "
           >
@@ -25,6 +27,8 @@ const Card = (props) => {
           </a>
           <a
             href={props.repo}
+            target="_blank"
+            rel="noreferrer"
             className="px-3 py-1 border-2 border-myblue w-full"
           >
             Repository

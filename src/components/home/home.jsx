@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="home fixed z-10 top-0 w-screen h-screen flex items-center">
       <div className="glassmorphism lg:w-[80%] lg:h-5/6 mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px]">
-        <div className="body text-white px-[58px] h-full flex flex-col justify-center gap-8 md:flex-row md:px-[64px] md:justify-between md:items-center lg:px-28 animate-swipe-left">
+        <div className="body text-white px-[58px] h-full flex flex-col justify-center gap-8 md:flex-row md:px-[64px] md:justify-between md:items-center lg:px-28">
           <div className="text font-extrabold text-5xl text-left md:text-[64px] w-fit font-inter">
             <h1>Hello</h1>
             <h1>I am</h1>

@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <div className="about flex items-center w-screen h-screen">
-      <div className="glassmorphism lg:w-[80%] mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px]">
-        <div className="body text-white px-[70px] flex flex-col justify-center py-12 animate-swipe-right">
+      <div className="glassmorphism lg:w-[80%] lg:h-5/6 mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px]">
+        <div className="body text-white px-[70px] flex flex-col justify-center py-12">
           <div className="title font-inter">
             <h1 className="font-extrabold text-5xl text-left flex items-end gap-3">
               Hello! <span className="text-[40px] lg:text-5xl">I am</span>
