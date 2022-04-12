@@ -2,12 +2,18 @@ import React from "react";
 import Photo from "../../assets/20190611_100255.jpg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <div className="about flex items-center w-screen h-screen">
       <div className="glassmorphism lg:w-[80%] lg:h-5/6 mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px]">
-        <div className="body text-white px-[70px] flex flex-col justify-center py-12">
+        <motion.div
+          className="body text-white px-[70px] flex flex-col justify-center py-12"
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          exit={{ x: window.innerWidth }}
+        >
           <div className="title font-inter">
             <h1 className="font-extrabold text-5xl text-left flex items-end gap-3">
               Hello! <span className="text-[40px] lg:text-5xl">I am</span>
@@ -48,7 +54,7 @@ export default function About() {
               </button>
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

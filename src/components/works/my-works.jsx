@@ -4,13 +4,19 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Link } from "react-router-dom";
 import { items } from "./card/works.js";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 import "swiper/css";
 
 export default function MyWorks() {
   return (
     <div className="my-works flex items-center w-screen h-screen">
       <div className="glassmorphism lg:w-[80%] mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px]">
-        <div className="wrapper px-16 py-8 flex flex-col gap-8 h-full">
+        <motion.div
+          className="wrapper px-16 py-8 flex flex-col gap-8 h-full"
+          initial={{ width: 0 }}
+          animate={{ width: "100%" }}
+          exit={{ x: window.innerWidth }}
+        >
           <div className="works font-inter font-extrabold text-white text-left">
             <h1 className="text-5xl">Here is ...</h1>
             <p className="text-xl leading-5">some of My works</p>
@@ -45,7 +51,7 @@ export default function MyWorks() {
               </button>
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
