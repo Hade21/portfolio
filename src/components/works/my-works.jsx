@@ -9,14 +9,14 @@ import "swiper/css";
 
 export default function MyWorks() {
   return (
-    <div className="my-works flex items-center w-screen h-screen">
+    <motion.div
+      className="my-works flex items-center w-screen h-screen"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth }}
+    >
       <div className="glassmorphism lg:w-[80%] mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px]">
-        <motion.div
-          className="wrapper px-16 py-8 flex flex-col gap-8 h-full"
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
-          exit={{ x: window.innerWidth }}
-        >
+        <div className="wrapper px-16 py-8 flex flex-col gap-8 h-full">
           <div className="works font-inter font-extrabold text-white text-left">
             <h1 className="text-5xl">Here is ...</h1>
             <p className="text-xl leading-5">some of My works</p>
@@ -51,8 +51,8 @@ export default function MyWorks() {
               </button>
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

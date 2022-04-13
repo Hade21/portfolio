@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="about flex items-center w-screen h-screen">
+    <motion.div
+      className="about flex items-center w-screen h-screen"
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{ x: window.innerWidth }}
+    >
       <div className="glassmorphism lg:w-[80%] lg:h-5/6 mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px]">
-        <motion.div
-          className="body text-white px-[70px] flex flex-col justify-center py-12"
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
-          exit={{ x: window.innerWidth }}
-        >
+        <div className="body text-white px-[70px] flex flex-col justify-center py-12">
           <div className="title font-inter">
             <h1 className="font-extrabold text-5xl text-left flex items-end gap-3">
               Hello! <span className="text-[40px] lg:text-5xl">I am</span>
@@ -54,8 +54,8 @@ export default function About() {
               </button>
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

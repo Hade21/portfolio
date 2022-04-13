@@ -7,31 +7,26 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="contact flex items-center w-screen h-screen">
+    <motion.div
+      className="contact flex items-center w-screen h-screen"
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{ x: window.innerWidth }}
+    >
       <div className="glassmorphism lg:w-[80%] lg:h-5/6 mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px] flex flex-col justify-between px-8 py-8">
-        <motion.div
-          className="wrapper flex justify-between"
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
-          exit={{ x: window.innerWidth }}
-        >
+        <div className="wrapper flex justify-between">
           <MySkill />
           <MyContact />
-        </motion.div>
-        <motion.div
-          className="button"
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
-          exit={{ x: window.innerWidth }}
-        >
+        </div>
+        <div className="button">
           <Link to="/">
             <button className="text-base font-inter font-extrabold px-4 py-2 border-2 border-white w-fit self-center md:text-4xl md:px-4 md:py-2 lg:text-base cursor-pointer text-white">
               Back to Home <ArrowForwardIcon fontSize="large" />
             </button>
           </Link>
-        </motion.div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
