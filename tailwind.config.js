@@ -23,15 +23,15 @@ module.exports = {
                 profile: "url('./assets/20190611_100255.jpg')",
             },
             animation: {
-                loadhtml: "loadBg 1.5s ease-in-out",
-                loadcss: "loadBg 2s ease-in-out",
-                loadjs: "loadBg 2.5s ease-in-out",
-                loadreact: "loadBg 3s ease-in-out",
-                loadnode: "loadBg 3.5s ease-in-out",
-                loadBarHtml: "loadBarHtml 4.5s ease-in-out",
-                loadBarJs: "loadBarJs 4.5s ease-in-out",
-                loadBarReact: "loadBarReact 4.5s ease-in-out",
-                loadBarNode: "loadBarNode 4.5s ease-in-out",
+                loadhtml: "loadBg 1s ease-in-out",
+                loadcss: "loadBg 1.5s ease-in-out",
+                loadjs: "loadBg 2s ease-in-out",
+                loadreact: "loadBg 2.5s ease-in-out",
+                loadnode: "loadBg 3s ease-in-out",
+                loadBarHtml: "loadBarHtml 4s ease-in-out",
+                loadBarJs: "loadBarJs 4s ease-in-out",
+                loadBarReact: "loadBarReact 4s ease-in-out",
+                loadBarNode: "loadBarNode 4s ease-in-out",
             },
             keyframes: {
                 loadBg: {
@@ -39,19 +39,19 @@ module.exports = {
                     "100%": { width: "100%" },
                 },
                 loadBarHtml: {
-                    "0%, 50%": { width: "0%" },
+                    "0%, 70%": { width: "0%" },
                     "100%": { width: "90%" },
                 },
                 loadBarJs: {
-                    "0%, 50%": { width: "0%" },
+                    "0%, 70%": { width: "0%" },
                     "100%": { width: "70%" },
                 },
                 loadBarReact: {
-                    "0%, 50%": { width: "0%" },
+                    "0%, 70%": { width: "0%" },
                     "100%": { width: "50%" },
                 },
                 loadBarNode: {
-                    "0%, 50%": { width: "0%" },
+                    "0%, 70%": { width: "0%" },
                     "100%": { width: "30%" },
                 },
             },

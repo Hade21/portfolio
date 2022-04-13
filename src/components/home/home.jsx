@@ -11,9 +11,9 @@ export default function Home() {
       animate={{ width: "100%", opacity: 1 }}
       exit={{ x: window.innerWidth }}
     >
-      <div className="glassmorphism lg:w-[80%] lg:h-5/6 mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px]">
-        <div className="body text-white px-[58px] h-full flex flex-col justify-center gap-8 md:flex-row md:px-[64px] md:justify-between md:items-center lg:px-28">
-          <div className="text font-extrabold text-5xl text-left md:text-[64px] w-fit font-inter">
+      <div className="glassmorphism lg:w-[80%] w-[90%] lg:h-5/6 mx-auto my-auto bg-black-glass shadow-glass backdrop-blur-glass rounded-[10px]">
+        <div className="body text-white px-[58px] py-12 lg:py-0 h-full flex flex-col justify-center gap-8 md:flex-row md:px-[64px] md:justify-between items-center lg:px-28">
+          <div className="text font-extrabold text-5xl text-left md:text-[64px] w-fit font-inter self-start md:self-center">
             <h1>Hello</h1>
             <h1>I am</h1>
             <h1>Rohman</h1>

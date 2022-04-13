@@ -5,14 +5,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function MyContact() {
   return (
-    <div className="my-contact w-1/2">
-      <div className="wrapper px-4 flex flex-col gap-10">
+    <div className="my-contact w-full lg:w-1/2">
+      <div className="wrapper px-4 flex flex-col gap-5 md:gap-10">
         <div className="title">
-          <h1 className="font-inter font-extrabold text-4xl text-white text-left">
+          <h1 className="font-inter font-extrabold text-2xl md:text-3xl lg:text-4xl text-white text-left">
             Contact Me ...
           </h1>
         </div>
-        <div className="contact px-8 h-full">
+        <div className="contact px-8 mx-auto md:mx-0 h-full">
           <ul className="text-white text-base flex flex-col justify-around">
             <li>
               <a
