@@ -17,15 +17,18 @@ export default function MyWorks() {
 
   const [windowWidth, setWindowWidth] = useState(getWindowWidth());
 
-  useEffect(() => {
-    if (hasWindow) {
-      function handleResize() {
-        setWindowWidth(getWindowWidth());
+  useEffect(
+    (getWindowWidth) => {
+      if (hasWindow) {
+        function handleResize() {
+          setWindowWidth(getWindowWidth());
+        }
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
       }
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, [hasWindow]);
+    },
+    [hasWindow]
+  );
 
   return (
     <motion.div
